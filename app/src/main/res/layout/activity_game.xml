@@ -26,6 +26,7 @@
             android:gravity="center_horizontal"
             android:text="ZERO (O)"
             android:textSize="24sp"
+            android:background="@drawable/coloured_round_bg"
             android:textStyle="bold|italic" />
 
         <TextView
@@ -41,23 +42,29 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/undo"
+        android:id="@+id/newgame_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Undo"
-        app:layout_constraintBottom_toTopOf="@+id/newgame_btn"
+        android:background="@drawable/round_white_bg"
+        android:text="NEW GAME"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/clear"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton7" />
+        android:padding="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        app:layout_constraintVertical_bias="0.497" />
 
     <Button
         android:id="@+id/clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:background="@drawable/round_white_bg"
         android:text="PLAY AGAIN"
-        app:layout_constraintBottom_toTopOf="@+id/newgame_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/undo"
+        app:layout_constraintStart_toEndOf="@+id/newgame_btn"
         app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
 
     <ImageButton
@@ -167,15 +174,6 @@
         android:textColor="@android:color/black"
         android:visibility="invisible"/>
 
-    <Button
-        android:id="@+id/newgame_btn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="NEW GAME"
-        android:layout_margin="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clear" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

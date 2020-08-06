@@ -7,16 +7,15 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/multi"
-        android:layout_width="wrap_content"
+        android:id="@+id/single"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/round_white_bg"
         android:text="vs COMPUTER"
-        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/single" />
+        app:layout_constraintStart_toEndOf="@+id/multi"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -43,12 +42,13 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/single"
-        android:layout_width="wrap_content"
+        android:id="@+id/multi"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="START GAME"
-        app:layout_constraintBottom_toTopOf="@+id/multi"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/round_white_bg"
+        android:text="VS Friend"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/single"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
